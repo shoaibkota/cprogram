@@ -1,0 +1,19 @@
+#include<stdio.h>
+void
+main ()
+{
+  int i, n, fct = 1;
+  printf ("enter the number");
+  scanf ("%d", &n);
+  if (n == 0)
+    fct = 1;
+  else
+    {
+      for (i = 1; i <= n; i++)
+	{
+	  fct = fct * i;
+	}
+      printf ("factorial of %d is:%d", n, fct);
+
+    }
+}
